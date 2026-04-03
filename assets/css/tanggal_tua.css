@@ -135,55 +135,6 @@ body {
     line-height: 1.6;
 }
 
-/* Search Card */
-.search-card {
-    background: white;
-    width: 90%; 
-    height: px;  
-    border-radius: 70px;
-    
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: left;
-}
-
-.input-group {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    border-radius: 30px;
-    padding: 0 50px;
-}
-
-.input-group i {
-    color: #e5212e;
-}
-
-.input-group input {
-    width: 100%;
-    border: none;
-    padding: 15px;
-    outline: none;
-    font-size: 18px;
-}
-
-/* Grid Section */
-.container {
-    max-width: 1200px;
-    margin: 50px auto 50px auto;
-    padding: 0 20px;
-}
-
-.section-title {
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 50px;
-    text-align: center;
-}
-
 
 
 @media (max-width: 992px) {
@@ -192,5 +143,4 @@ body {
 
 @media (max-width: 600px) {
     .grid-container { grid-template-columns: 1fr; }
-    .search-bar { flex-direction: column; }
 }

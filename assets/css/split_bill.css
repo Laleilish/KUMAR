@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FDF4E7;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #FEF6EC;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #e5212e;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+}
+
+.nav-links a.active {
+    color: black;
+    border-bottom: 2px solid #e5212e;
+    padding-bottom: 5px;
+}
+
+.badge {
+    background: #e5212e;
+    color: white;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-search{
+    color: #00880d;
+    background-color: #f0fdf4;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.btn-login {
+    background: #f0fdf4;
+    color: #00880d;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FCEDD7;
+    margin: 20px;
+    border-radius: 40px;
+    padding: 100px 20px 180px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-icon {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    color: #e5212e;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hero-header {
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Hero Body */
+.hero-body h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.hero-body i {
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.jumlah-uang {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 16px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #FDF4E7;
+    height: 42px;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.jumlah-uang i {
+    font-size: 14px;
+}
+
+.jumlah-uang input {
+    background: transparent;
+    border: transparent;
+}
+
+
+
+.anggota-container p {
+    color: #333;
+}
+
+.anggota-container h2 {
+    color: #333;
+}
+
+
+@media (max-width: 992px) {
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .grid-container { grid-template-columns: 1fr; }
+    .search-bar { flex-direction: column; }
+}

@@ -1,15 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../assets/css/login-style.css">
-    
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="navbar-container"></div>
+    <header class="login-header">
+            <div class="login-logo">
+                <img src="../assets/img/icon-kumar.png" alt="KUMAR">
+                <span class="logo-text">KU<span class="logo-accent">MAR</span></span>
+            </div>
+            <div class="lang-switch">
+                <span class="active">ID</span>
+                <span class="divider">|</span>
+                <span>EN</span>
+            </div>
+    </header>
+
+    <div class="login-container">
+        <main class="login-main">
+            <h1>Masuk dengan Aman</h1>
     
-     <script src="../assets/js/login-script.js"></script>   
+            <div class="phone-input-group">
+                <div class="country-code">
+                    <span>ID</span>
+                    <span>62</span>
+                </div>
+                <input type="tel" id="phone-input" placeholder="123456789">
+            </div>
+    
+            <label class="remember-me">
+                <input type="checkbox">
+                <span>Ingat saya di perangkat ini selama 60 hari</span>
+            </label>
+    
+            <button class="btn-lanjutkan" id="btn-lanjutkan" disabled>Lanjutkan</button>
+            <div class="divider-or"><span>or</span></div>
+            <button class="btn-social btn-apple">
+                <i class="fa-brands fa-apple"></i>
+                <span>Lanjutkan dengan Apple</span>
+            </button>
+    
+            <button class="btn-social btn-google">
+                <i class="fa-brands fa-google"></i>
+                <span>Lanjutkan dengan Google</span>
+            </button>
+    
+            <button class="btn-social btn-facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Lanjutkan dengan Facebook</span>
+            </button>
+        </main>
+    
+        <footer class="login-footer">
+            <div class="login-footer-links">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat dan ketentuan</a>
+            </div>
+            <p>Butuh bantuan? <a href="#" class="pusat-bantuan">Pusat Bantuan</a></p>
+        </footer>
+    </div>
+
 </body>
 </html>

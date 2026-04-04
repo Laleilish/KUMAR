@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #FDF4E7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LOGIN */
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-logo img {
+    width: 32px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #040818;
+}
+
+.logo-accent {
+    color: #960913;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #5D6E86;
+    cursor: pointer;
+}
+
+.lang-switch .active {
+    color: #040818;
+}
+
+.login-main {
+    flex: 1;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-main h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #040818;
+    margin-bottom: 8px;
+}
+
+.phone-input-group {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1.5px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.country-code {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 12px;
+    border-right: 1.5px solid #ddd;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    color: #040818;
+    white-space: nowrap;
+}
+
+.phone-input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px 12px;
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: transparent;
+    color: #040818;
+}
+
+.phone-input-group input::placeholder {
+    color: #ccc;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #040818;
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #02B176;
+}
+
+.btn-lanjutkan {
+    background: #A8DFD0;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: not-allowed;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: background 0.2s;
+}
+
+.btn-lanjutkan.enabled {
+    background: #02B176;
+    cursor: pointer;
+}
+
+.btn-lanjutkan.enabled:hover {
+    background: #029962;
+}
+
+.divider-or {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.divider-or::before,
+.divider-or::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: opacity 0.2s;
+}
+
+.btn-social:hover {
+    opacity: 0.85;
+}
+
+.btn-apple {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-apple i {
+    font-size: 20px;
+}
+
+.btn-google {
+    background: #ffffff;
+    color: #040818;
+    border: 1.5px solid #ddd;
+}
+
+.btn-facebook {
+    background: #1877F2;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-facebook i {
+    font-size: 20px;
+}
+
+.login-footer {
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.login-footer-links a {
+    color: #02B176;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.login-footer p {
+    font-size: 13px;
+    color: #040818;
+}
+
+.pusat-bantuan {
+    color: #040818;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+/*  REGISTER  */
+
+/* ===== REGISTER ===== */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #040818;
+}
+
+.form-input {
+    background: #ffffff;
+    border: 1.5px solid #ddd;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #040818;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    border-color: #02B176;
+}
+
+.form-input::placeholder {
+    color: #ccc;
+}
+
+.terms-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.terms-links a {
+    color: #02B176;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.terms-links a:hover {
+    text-decoration: underline;
+}
+
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #040818;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.agreement input[type="checkbox"] {
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    cursor: pointer;
+    accent-color: #02B176;
+}

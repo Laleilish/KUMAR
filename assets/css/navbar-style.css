@@ -62,7 +62,6 @@
     flex-direction: column;
     align-items: flex-start;   
     justify-content: flex-start;
-    gap: 0;
     padding: 20px 24px;
     transition: left 0.4s ease;
     z-index: 999;
@@ -150,7 +149,7 @@ color: #040818;
 
 @media (min-width: 768px) {
     .navbar {
-        padding: 10px 50px;
+        padding: 8px 40px;
     }
 
     .hamburger {
@@ -163,7 +162,7 @@ color: #040818;
         height: auto;
         flex-direction: row;
         align-items: center;
-        gap: 25px;
+        gap: 24px;
         background: transparent;
         transition: none;
     }
@@ -188,7 +187,7 @@ color: #040818;
     .nav-right {
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 24px;
     }
 
     .btn-login {
@@ -196,7 +195,12 @@ color: #040818;
         color: #EFEFEF;
         border: none;
         padding: 8px 16px;
-        border-radius: 10px;
+        border-radius: 24px;
         font-weight: bold;
+    }
+    
+    .btn-login:hover{
+        background: #029962;
+        cursor: pointer;
     }
 }

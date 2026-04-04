@@ -45,7 +45,7 @@ body {
 .hero-desc {
     color: #040818;
     font-size: 13px;
-    margin: 10px 0 18px;
+    margin: 8px 0 16px;
     line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@ body {
     font-weight: 600;
     color: #040818;
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 .search-row {
     display: flex;
@@ -100,7 +100,7 @@ body {
     background: #02B176;
     color: #ffffff;
     border: none;
-    border-radius: 16px;
+    border-radius: 24px;
     padding: 10px 14px;
     font-size: 13px;
     font-weight: 600;
@@ -111,7 +111,7 @@ body {
 }
 
 .btn-cari:hover {
-    background: #21867a;
+    background: #029962;
 }
 
 .hero-images {
@@ -143,7 +143,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     cursor: pointer;
 }
 
@@ -190,13 +190,13 @@ body {
     font-size: 22px;
     font-weight: 700;
     color: #040818;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .restaurant-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 16px;
     text-align: left;
 }
 
@@ -229,14 +229,14 @@ body {
     font-weight: 700;
     color: #040818;
     line-height: 1.4;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     overflow: hidden;
 }
 
 .card-info p {
     font-size: 11px;
     color: #777;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -269,7 +269,7 @@ body {
 }
 
 .btn-lihat:hover {
-    background: #21867a;
+    background: #029962;
 }
 
 @media (min-width: 768px) {

@@ -160,7 +160,6 @@ body {
 /* Categories */
 .categories {
     padding: 36px 20px;
-    background: #ffffff;
     text-align: center;
 }
 
@@ -190,6 +189,9 @@ body {
     width: 70px;
     height: 70px;
     object-fit: contain;
+    border: 1px solid #EF950F;
+    border-radius: 16px;
+    align-items: center;
 }
 
 .category-icon {
@@ -426,7 +428,7 @@ body {
     }
 
     .restaurant-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .restaurant-card img {
@@ -436,4 +438,11 @@ body {
     .card-info h3 {
         font-size: 13px;
     }
+}
+
+@media (min-width: 1024px) {
+    .restaurant-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
 }

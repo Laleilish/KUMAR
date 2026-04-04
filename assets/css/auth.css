@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .login-container {

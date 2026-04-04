@@ -138,9 +138,17 @@ body {
     background-color: #EF950F;
     margin: 10px 0px 0px 0px;
     border-radius: 40px;
-    padding: 15px 30px 50px;
+    padding: 15px 10px 50px;
     text-align: center;
     position: relative;
+}
+
+.hero-person {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;        
+    width: auto;
 }
 
 .hero-judul h1 {

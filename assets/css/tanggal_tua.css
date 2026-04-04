@@ -90,18 +90,59 @@ body {
     cursor: pointer;
 }
 
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 90%;
+    max-width: 350px;
+    padding: 0px 20px;
+    border-radius: 50px;
+    
+    margin: 15px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #FDF4E7;
+    width: 100%;
+    height: 35px;
+}
+
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #FDF4E7;
+    font-size: 13px;
+}
+
+.fa-solid:hover{
+    color: #e5212e;
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
-    background-color: #EF950F;
-    margin: 20px;
-    border-radius: 40px;
-    padding: 100px 20px 180px 20px;
+    margin: 10px;
     text-align: center;
-    color: white;
     position: relative;
 }
 
-.hero-icon {
+.hero-banner {
+    background-color: #EF950F;
+    margin: 10px 0px 0px 0px;
+    border-radius: 40px;
+    padding: 15px 30px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-judul h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* .hero-icon {
     background: white;
     width: 80px;
     height: 80px;
@@ -113,32 +154,164 @@ body {
     color: #e5212e;
     font-size: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+} */
 
-.hero h1 {
-    font-size: 48px;
+.hero-banner h2 {
+    font-size: 16px;
     margin-bottom: 15px;
     text-align: right;
     color: #020618;
 }
 
-.price {
-    font-size: 80px;
+.hero-banner h3 {
+    font-size: 50px;
     margin-bottom: 15px;
     text-align: right;
+    color: #020618;
+}
+
+.hero-info h2{
+    font-size: 16px;
+}
+
+.hero-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 90%;
+    max-width: 400px;
+    padding: 0px 20px;
+    border-radius: 50px;
+    
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #FDF4E7;
+    width: 100%;
+    height: 45px;
+
+   position: relative;
+   bottom: 20px;
+}
+
+.hero-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #FDF4E7;
+    font-size: 13px;
 }
 
 .hero p {
-    font-size: 30px;
+    font-size: 13px;
     text-align: right;
-    opacity: 0.9;
-    line-height: 1.6;
+    color: white;   
 }
 
+/* --- KATEGORI --- */
+.category-section {
+    margin: 20px 50px 20px;
+    text-align: center;
+}
 
+.category-section h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #111;    
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cat-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.cat-icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.category-item:hover .cat-icon-wrapper, .category-item.active .cat-icon-wrapper {
+    border-color: #E88C23;
+}
+
+.category-item span {
+    font-weight: 600;
+    color: #666;
+}
+
+.category-item.active span {
+    color: #111;
+    border-bottom: 3px solid #E88C23;
+    padding-bottom: 2px;
+}
+
+/* Card */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    cursor: pointer;
+    
+}
+
+.card-image {
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #F5E4C0 0%, #E8C87A 100%);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 42px;
+    position: relative;
+}
+
+.card-badge {
+    position: absolute;
+    top: 8px; left: 8px;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 50px;
+}
+.card-body { 
+    padding: 10px 12px 12px; 
+}
 
 @media (max-width: 992px) {
     .grid-container { grid-template-columns: repeat(2, 1fr); }
+    
 }
 
 @media (max-width: 600px) {

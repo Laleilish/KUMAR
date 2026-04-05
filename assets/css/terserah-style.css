@@ -110,14 +110,10 @@ body {
     text-align: center;
 }
 
-/* ===== TOMBOL ACAK FIXED ===== */
-.acak-bar {
-    background: linear-gradient(to top, #FDF4E7 80%, transparent);
-}
-
 .btn-acak {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     
     width: 100%;
@@ -143,6 +139,6 @@ body {
     
     .category-list {
         display: flex;
-        flex-direction: row;x
+        flex-direction: row;
     }
 }

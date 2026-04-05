@@ -1,5 +1,5 @@
 // Nav Bar
-fetch('../pages/navbar.html')
+fetch('pages/navbar.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('navbar-container').innerHTML = data;
@@ -20,11 +20,8 @@ fetch('../pages/navbar.html')
     });
   });
 
-
-
-
 // Footer
-fetch('../pages/footer.html')
+fetch('pages/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer-container').innerHTML = data;

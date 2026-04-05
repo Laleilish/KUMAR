@@ -1,11 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tanggal Tua</title>
+    <link rel="stylesheet" href="../assets/css/tanggal_tua.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
     
+    <main>
+        <!-- Search lokasi -->
+        <section class="location">
+            <div class="search-container">
+                <i class="fas fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pilih Lokasi Anda">
+                <button>
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-judul">
+                <h1>Duit Habis Diakhir Bulan?</h1>
+            </div>
+            
+            <div class="hero-banner">
+                <img src="../assets/img/Image Banner.png" class="hero-person">
+                
+                <h2>Fitur Tanggal Tua Hadir <br> Untuk Menyelematkanmu!</h2>
+                <p>Makan Enak Tanpa Biaya Lebih</p>
+                <h3>15k</h3>
+                <p>Harga Terendah, <br> Makan Termewah</p>
+            </div>
+
+            <div class="hero-search">
+                <input type="text" placeholder="Cari Makanan">
+                <i class="fas fa-magnifying-glass"></i>
+            </div>
+
+            <div class="hero-info">
+                <h2>Semua Makanan Hanya Dibawah 15rb</h2>
+            </div>
+        </section>
+                
+        <!-- Category -->
+        <section class="category-section">
+
+            <div class="category-list">
+                <div class="category-item active">
+                    <div class="cat-icon-wrapper"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=150&h=150&fit=crop" alt="Semua"></div>
+                    <span>Semua</span>
+                </div>
+
+                <div class="category-item">
+                    <div class="cat-icon-wrapper"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=150&h=150&fit=crop" alt="Nasi"></div>
+                    <span>Nasi</span>
+                </div>
+                    
+                <div class="category-item">
+                    <div class="cat-icon-wrapper"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=150&h=150&fit=crop" alt="Mie"></div>
+                    <span>Mie</span>
+                </div>
+                    
+                <div class="category-item">
+                    <div class="cat-icon-wrapper"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=150&h=150&fit=crop" alt="Jajanan"></div>
+                    <span>Jajanan</span>
+                </div>
+
+                <div class="category-item">
+                    <div class="cat-icon-wrapper"><img src="https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?w=150&h=150&fit=crop" alt="Manisan"></div>
+                    <span>Manisan</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Recomendation -->
+        <section class="cards-grid">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/img/Ayam Bakar.png">
+                    <div class="card-badge"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-stars">
+                        <span class="star">★</span><span class="star">★</span>
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        <span class="rating">120 Pengguna</span>
+                    </div>
+
+                
+                    <h3>Nasi Padang Banjir</h3>
+                    
+                    <div class="card-tag">Haji Salim Kebon Sirih 1958, Kebon Sirih Barat</div>    
+                    
+                    <div class="card-footer">
+                        <div class="card-distance"><span class="fas fa-map-marker-alt"></span> 1.8 km</div>
+                        <div class="card-price">Rp13.000</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/img/Ayam Bakar.png">
+                    <div class="card-badge"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-stars">
+                        <span class="star">★</span><span class="star">★</span>
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        <span class="rating">120 Pengguna</span>
+                    </div>
+
+                
+                    <h3>Nasi Padang Banjir</h3>
+                    
+                    <div class="card-tag">Haji Salim Kebon Sirih 1958, Kebon Sirih Barat</div>    
+                    
+                    <div class="card-footer">
+                        <div class="card-distance"><span class="fas fa-map-marker-alt"></span> 1.8 km</div>
+                        <div class="card-price">Rp13.000</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/img/Ayam Bakar.png">
+                    <div class="card-badge"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-stars">
+                        <span class="star">★</span><span class="star">★</span>
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        <span class="rating">120 Pengguna</span>
+                    </div>
+
+                
+                    <h3>Nasi Padang Banjir</h3>
+                    
+                    <div class="card-tag">Haji Salim Kebon Sirih 1958, Kebon Sirih Barat</div>    
+                    
+                    <div class="card-footer">
+                        <div class="card-distance"><span class="fas fa-map-marker-alt"></span> 1.8 km</div>
+                        <div class="card-price">Rp13.000</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/img/Ayam Bakar.png">
+                    <div class="card-badge"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-stars">
+                        <span class="star">★</span><span class="star">★</span>
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        <span class="rating">120 Pengguna</span>
+                    </div>
+
+                
+                    <h3>Nasi Padang Banjir</h3>
+                    
+                    <div class="card-tag">Haji Salim Kebon Sirih 1958, Kebon Sirih Barat</div>    
+                    
+                    <div class="card-footer">
+                        <div class="card-distance"><span class="fas fa-map-marker-alt"></span> 1.8 km</div>
+                        <div class="card-price">Rp13.000</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/img/Ayam Bakar.png">
+                    <div class="card-badge"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-stars">
+                        <span class="star">★</span><span class="star">★</span>
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        <span class="rating">120 Pengguna</span>
+                    </div>
+
+                
+                    <h3>Nasi Padang Banjir</h3>
+                    
+                    <div class="card-tag">Haji Salim Kebon Sirih 1958, Kebon Sirih Barat</div>    
+                    
+                    <div class="card-footer">
+                        <div class="card-distance"><span class="fas fa-map-marker-alt"></span> 1.8 km</div>
+                        <div class="card-price">Rp13.000</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/img/Ayam Bakar.png">
+                    <div class="card-badge"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-stars">
+                        <span class="star">★</span><span class="star">★</span>
+                        <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        <span class="rating">120 Pengguna</span>
+                    </div>
+
+                
+                    <h3>Nasi Padang Banjir</h3>
+                    
+                    <div class="card-tag">Haji Salim Kebon Sirih 1958, Kebon Sirih Barat</div>    
+                    
+                    <div class="card-footer">
+                        <div class="card-distance"><span class="fas fa-map-marker-alt"></span> 1.8 km</div>
+                        <div class="card-price">Rp13.000</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    
+    <script src="../assets/js/tanggal_tua.js"></script>
 </body>
 </html>

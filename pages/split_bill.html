@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../assets/css/split_bill.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <base href="/">    
+</head>
+<body>
+    <section class="header">
+        <div id="navbar-container"></div>
+    </section>
+    
+    <main>
+        <!-- Form -->
+        <section class="form-section">
+ 
+            <div class="form-card">
+                <!-- Split -->
+                <div class="form-split">
+                    <h2 class="form-title">Split Bill</h2>
+                    <p class="form-sub">Atur Jumlah yang Kamu Inginkan</p>
+ 
+                    <!-- Input -->
+                    <div class="input-nominal">
+                        <span class="currency-label">Rp</span>
+                        <input type="number" id="nominal-input" placeholder="0" min="0">
+                        <i class="fas fa-pencil"></i>
+                        </button>
+                    </div>
+ 
+                    <div class="jumlah-anggota-wrap">
+                        <label>Jumlah Anggota</label>
+                        <div class="counter-box">
+                            <div class="counter-info">
+                                <img src="../assets/img/Icon Profile.png">
+                                <div class="counter-text">
+                                    <h1>Tambah anggota</h1>
+                                </div>
+                            </div>
+                            <div class="counter-controls">
+                                <button class="btn-counter" id="btn-kurang" disabled>−</button>
+                                <span class="counter-num" id="counter-num">0</span>
+                                <button class="btn-counter" id="btn-tambah">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab -->
+                    <div class="tab-mode">
+                        <button class="tab-btn active" id="tab-bagi">Bagi Rata</button>
+                        <button class="tab-btn" id="tab-nominal">Tentuin Nominal</button>
+                    </div>
+ 
+                    <!-- Tombol Bersihkan -->
+                    <button class="btn-bersihkan-dekstop" id="btn-bersihkan">Bersihkan</button>
+                </div>
+                
+                <!-- Split -->
+                <div class="split">
+                    <!-- Summary Card -->
+                    <div class="summary-card" id="summary-card">
+                        <div class="summary-nominal">
+                            <span id="sum-terkumpul">Rp0</span> dari <span id="sum-total">Rp0</span>
+                        </div>
+                        <div class="summary-label">Hitungan Semua Biaya</div>
+                    </div>
+ 
+                    <!-- Hasil Split -->
+                    <div class="hasil-wrap" id="hasil-wrap">
+                        <div class="hasil-header">
+                            <span>Orang</span>
+                            <span>Bayar</span>
+                        </div>
+                        <div class="hasil-empty" id="hasil-empty"></div>
+                        <div id="hasil-rows"></div>
+                    </div>
+
+                    <div class="spacer"></div>
+ 
+                    <!-- Tombol Bersihkan -->
+                    <button class="btn-bersihkan" id="btn-bersihkan">Bersihkan</button>
+                </div>
+                
+ 
+                
+            </div>
+ 
+        </section> 
+    </main>
+
+    
+    <div id="footer-container"></div>
+    
+    <script src="../assets/js/split_bill.js"></script>
+</body>
+</html>

@@ -90,13 +90,13 @@ body {
     cursor: pointer;
 }
 
-/* Hero Section */
-.card-section {
-    padding: 16px;
+/* Hero Section */ 
+.form-section {
+    display: flex;
+    justify-content: center;
 }
- 
 .form-card {
-    background: var(--cream-light);
+    max-width: 480px;
     border-radius: 20px;
     padding: 24px 20px;
     display: flex;
@@ -197,28 +197,18 @@ body {
     gap: 10px;
 }
 
-.counter-icon {
-    width: 36px;
-    height: 36px;
-    background: #E8D5B0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+.counter-info img {
+    width: 55px;
+    
 }
 
 .counter-text {
     font-size: 14px;
     font-weight: 600;
-    color: var(--text-dark);
 }
 
-.counter-text span {
-    font-size: 12px;
-    color: var(--text-gray);
-    font-weight: 400;
-    display: block;
+.counter-text h1 {
+    font-size: 14px;
 }
 
 .counter-controls {
@@ -231,9 +221,8 @@ body {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 2px solid var(--orange);
+    border:transparent;
     background: transparent;
-    color: var(--orange);
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
@@ -268,44 +257,6 @@ body {
     text-align: center;
 }
 
-/* Hasil Split */
-.hasil-split {
-    background: var(--white);
-    border-radius: 12px;
-    padding: 16px;
-    border: 1px solid var(--border);
-}
-
-.hasil-split h3 {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 12px;
-}
-
-.hasil-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #f0e8d8;
-}
- 
-.hasil-item:last-child { border-bottom: none; }
- 
-.hasil-nama {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: var(--text-dark);
-}
- 
- .hasil-bayar {
-    font-size: 13px;
-    font-weight: 700;
-}
- 
 /* Spacer */
 .spacer {
     flex: 1;
@@ -334,8 +285,6 @@ body {
     transform: scale(0.98);
 }
  
-
-
 @media (max-width: 992px) {
     .grid-container { grid-template-columns: repeat(2, 1fr); }
 }

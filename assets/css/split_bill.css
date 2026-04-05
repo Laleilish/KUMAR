@@ -15,7 +15,6 @@ body {
     justify-content: center;
 }
 .form-card {
-    max-width: 500px;
     border-radius: 20px;
     padding: 24px 20px;
     display: flex;
@@ -155,21 +154,133 @@ body {
 .counter-num {
     font-size: 22px;
     font-weight: 800;
-    color: var(--text-dark);
     min-width: 28px;
     text-align: center;
 }
 
-/* Spacer */
-.spacer {
+/* Tab */
+.tab-mode {
+    display: flex;
+    background: #FDF4E7;
+    border-radius: 50px;
+    padding: 4px;
+}
+
+.tab-btn {
     flex: 1;
-    min-height: 270px;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    color: #888;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    background: #FADEB5;
+    color: #1A1A1A;
+}
+
+/* Split */
+.split {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.form-split{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Summary Card */
+.summary-card {
+    background: #FADEB5;
+    stroke: #D08700;
+    border-radius: 12px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.3s;
+    min-height: auto;
+    width: 100%;
 }
  
+.summary-nominal {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1A1A1A;
+    text-align: center;
+    line-height: 1.2;
+}
+ 
+.summary-nominal span:first-child {
+    color: #7A5200;
+}
+ 
+.summary-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #5A3D00;
+    text-align: center;
+}
+ 
+/* Hasil Split */
+.hasil-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #E8D5B0;
+    background: #FDF4E7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: auto;
+}
+ 
+.hasil-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #F0E0C0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #888;
+    letter-spacing: 0.3px;
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+}
+ 
+.hasil-empty {
+    padding: 32px 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.hasil-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-top: 1px solid #F0E5D0;
+    font-size: 14px;
+}
+
 /* Tombol Bersihkan */
 .btn-bersihkan {
     width: 100%;
-    padding: 16px;
+    padding: 14px 16px;
     border: none;
     border-radius: 50px;
     font-size: 16px;
@@ -179,23 +290,103 @@ body {
     transition: background 0.2s, transform 0.1s;
     color: #FFFFFF;
     background: #B3700B;
+    margin-top: auto;
+}
+
+.btn-bersihkan-dekstop {
+    display: none;
 }
 
 .btn-bersihkan:hover {
     background: #8a6008;
 }
- 
+
 .btn-bersihkan:active {
     transform: scale(0.98);
 }
- 
-@media (max-width: 992px) {
-    .grid-container { grid-template-columns: repeat(2, 1fr); }
 
-    
+.btn-bersihkan:disabled {
+    background: #CCC;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
-@media (max-width: 600px) {
+
+
+@media (min-width: 768px) {
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+
+    .form-card {
+        flex-direction: row;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .form-split {
+        flex: 1;
+    }
+
+    .split {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .btn-bersihkan {
+        display: none;
+    }
+
+    .btn-bersihkan-dekstop {
+        width: 100%;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inherit;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+        color: #FFFFFF;
+        background: #B3700B;
+        display: block;
+        margin-top: auto;
+    }
+
+    .btn-bersihkan-dekstop:hover {
+        background: #8a6008;
+    }
+
+    .btn-bersihkan-dekstop:active {
+        transform: scale(0.98);
+    }
+
+    .btn-bersihkan-dekstop:disabled {
+        background: #CCC;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    .summary-card {
+        padding: 16px 18px;
+        font-size: 16px;
+    }
+
+    .hasil-wrap {
+        max-height: 350px;
+        overflow-y: auto;
+    }
+
+    .hasil-row {
+        font-size: 14px;
+    }
+}    
+    
+
+@media (min-width: 1024px) {
     .grid-container { grid-template-columns: 1fr; }
     .search-bar { flex-direction: column; }
 }

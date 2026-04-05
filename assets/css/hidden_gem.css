@@ -292,6 +292,7 @@ body {
 .rating-card-vert {
     display: flex ;
     flex-direction: column;
+    
     background: white;
     border-radius: 14px;
     overflow: hidden;
@@ -302,6 +303,7 @@ body {
 
 .rating-card-vert img {
     width: 70px;
+    align-items: center;
 }
 
 .rating-card-vert:hover {

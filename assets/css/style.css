@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
     background-color: #FDF4E7;
+    font-family: 'Plus Jakarta Sans';
 }
 
 /*Hero*/
@@ -92,7 +92,6 @@ body {
     outline: none;
     flex: 1;
     font-size: 13px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #040818;
 }
 
@@ -110,7 +109,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     width: 100%;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     transition: background 0.2s;
 }
 
@@ -270,7 +268,6 @@ body {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     transition: background 0.2s;
 }
 

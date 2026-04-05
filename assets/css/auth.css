@@ -132,25 +132,20 @@ body {
 }
 
 .btn-lanjutkan {
-    background: #A8DFD0;
+    background: #02B176;
     color: #ffffff;
     border: none;
     border-radius: 12px;
     padding: 14px;
     font-size: 15px;
     font-weight: 600;
-    cursor: not-allowed;
     width: 100%;
     font-family: 'Plus Jakarta Sans', sans-serif;
     transition: background 0.2s;
 }
 
-.btn-lanjutkan.enabled {
-    background: #02B176;
-    cursor: pointer;
-}
 
-.btn-lanjutkan.enabled:hover {
+.btn-lanjutkan:hover {
     background: #029962;
 }
 
@@ -251,7 +246,6 @@ body {
 
 /*  REGISTER  */
 
-/* ===== REGISTER ===== */
 .form-group {
     display: flex;
     flex-direction: column;

@@ -9,94 +9,13 @@ body {
     background-color: #FDF4E7;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background: #FEF6EC;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.logo span {
-    color: #e5212e;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 600;
-}
-
-.nav-links a.active {
-    color: black;
-    border-bottom: 2px solid #e5212e;
-    padding-bottom: 5px;
-}
-
-.badge {
-    background: #e5212e;
-    color: white;
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 10px;
-}
-
-.nav-right {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-search{
-    color: #00880d;
-    background-color: #f0fdf4;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    
-}
-
-.btn-login {
-    background: #f0fdf4;
-    color: #00880d;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 /* Hero Section */ 
 .form-section {
     display: flex;
     justify-content: center;
 }
 .form-card {
-    max-width: 480px;
+    max-width: 500px;
     border-radius: 20px;
     padding: 24px 20px;
     display: flex;
@@ -115,7 +34,6 @@ body {
  
 .form-sub {
     font-size: 13px;
-    color: var(--text-gray);
     margin-top: -14px;
 }
  
@@ -125,17 +43,14 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background: var(--white);
     border-radius: 12px;
     padding: 16px 20px;
-    border: 1px solid var(--border);
     background: #FDF4E7;
 }
  
 .currency-label {
     font-size: 20px;
     font-weight: 700;
-    color: var(--text-dark);
 }
  
 .input-nominal input {
@@ -145,8 +60,6 @@ body {
     background: transparent;
     font-size: 20px;
     font-weight: 700;
-    font-family: inherit;
-    color: var(--text-dark);
     text-align: center;
 }
  
@@ -158,15 +71,6 @@ body {
 .input-nominal input::-webkit-outer-spin-button,
 .input-nominal input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
- 
-.btn-edit {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-gray);
-    font-size: 15px;
-    padding: 4px;
 }
  
 /* Jumlah Anggota Counter */
@@ -198,8 +102,7 @@ body {
 }
 
 .counter-info img {
-    width: 55px;
-    
+    width: 55px;    
 }
 
 .counter-text {
@@ -211,10 +114,15 @@ body {
     font-size: 14px;
 }
 
+.counter-sublabel {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
 .counter-controls {
     display: flex;
     align-items: center;
-    gap: 16px;
 }
 
 .btn-counter {
@@ -231,11 +139,6 @@ body {
     justify-content: center;
     line-height: 1;
     transition: all 0.15s;
-}
-
-.btn-counter:hover {
-    background: var(--orange);
-    color: var(--white);
 }
 
 .btn-counter:disabled {
@@ -260,6 +163,7 @@ body {
 /* Spacer */
 .spacer {
     flex: 1;
+    min-height: 270px;
 }
  
 /* Tombol Bersihkan */
@@ -287,6 +191,8 @@ body {
  
 @media (max-width: 992px) {
     .grid-container { grid-template-columns: repeat(2, 1fr); }
+
+    
 }
 
 @media (max-width: 600px) {

@@ -11,7 +11,11 @@ fetch('../pages/navbar.html')
     const btnTambah     = document.getElementById('btn-tambah');
     const btnKurang     = document.getElementById('btn-kurang');
     const counterNum    = document.getElementById('counter-num');
-     
+    const counterLabel  = document.querySelector('.counter-text h1');
+    const counterSublabel = document.createElement('p'); 
+    counterSublabel.className = 'counter-sublabel'; 
+    document.querySelector('.counter-text').appendChild(counterSublabel); 
+
     function updateCounter() {
         counterNum.textContent = jumlahAnggota;
  
@@ -24,8 +28,6 @@ fetch('../pages/navbar.html')
             counterSublabel.textContent = jumlahAnggota === 1 ? '1 anggota terlibat' : `${jumlahAnggota} anggota terlibat`;
             btnKurang.disabled = false;
         }
- 
-        hitungSplit();
     }
  
     btnTambah.addEventListener('click', () => {
@@ -40,7 +42,6 @@ fetch('../pages/navbar.html')
         }
     });
  
-
 // Footer
 
 fetch('../pages/footer.html')

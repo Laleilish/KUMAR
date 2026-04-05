@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #FDF4E7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  MAIN  */
+.terserah-main {
+    display: flex;
+    padding: 24px 16px 100px;
+    flex-direction: column;
+    gap: 24px;
+    
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.terserah-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.terserah-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #040818;
+    line-height: 1.3;
+}
+
+.terserah-header p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* CATEGORY CARDS */
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.category-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.category-card.selected {
+    border-color: #EF950F;
+    background: #FFFDF7;
+    box-shadow: 0 4px 16px rgba(239,149,15,0.2);
+}
+
+.category-icon-wrap {
+    width: 80px;
+    height: auto;
+    background: #F5E6C8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    transition: background 0.2s;
+}
+
+.category-icon-wrap img{
+    width: 80%;
+    /*height: 100%;*/
+    object-fit: contain;
+}
+
+.category-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #040818;
+    text-align: center;
+}
+
+.category-card p {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.btn-acak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px;
+    
+    background: #EF950F;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-acak:hover {
+    background: #d4820c;
+}
+
+@media (min-width: 768px) {
+    
+    .category-list {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
     <title>KUMAR - Kuliner Masyarakat</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <img class="hero-icon" src="assets/img/icon-kumar-white.png" alt="Icon Kumar" >
+            <img class="hero-icon" src="/assets/img/icon-kumar-white.png" alt="Icon Kumar" >
             <h1>Bingung Mau Makan Apa?</h1>
             <h1>KU<span>MAR</span>-in Aja</h1>
             <p class="hero-desc">Temukan tempat makan hidden gem, yang pas dengan dompetmu.<br>Cepat, hemat, dan banyak pilihan!</p>
@@ -29,11 +30,11 @@
             </div>
         </div>
         <div class="hero-images">
-            <img class="food-img food-1" src="assets/img/Header/foto1.png" alt="food">
-            <img class="food-img food-2" src="assets/img/Header/foto2.png" alt="food">
-            <img class="food-img food-3" src="assets/img/Header/foto3.png" alt="food">
-            <img class="food-img food-4" src="assets/img/Header/foto4.png" alt="food">
-            <img class="food-img food-5" src="assets/img/Header/foto5.png" alt="food">
+            <img class="food-img food-1" src="/assets/img/Header/foto1.png" alt="food">
+            <img class="food-img food-2" src="/assets/img/Header/foto2.png" alt="food">
+            <img class="food-img food-3" src="/assets/img/Header/foto3.png" alt="food">
+            <img class="food-img food-4" src="/assets/img/Header/foto4.png" alt="food">
+            <img class="food-img food-5" src="/assets/img/Header/foto5.png" alt="food">
         </div>
     </section>
 
@@ -41,23 +42,23 @@
         <h2>Mencari Hal Menarik?</h2>
         <div class="category-grid">
             <div class="category-item">
-                <div class="category-icon"><img src="assets/img/menu/Hidden Gem.png" alt="Hidden Gem"></div>
+                <div class="category-icon"><img src="/assets/img/menu/Hidden Gem.png" alt="Hidden Gem"></div>
                 <span>Hidden Gem</span>
             </div>
-            <div class="category-item">
-                <div class="category-icon"><img src="assets/img/menu/Tanggal Tua.png" alt="Tanggal Tua"></div>
+            <div class="category-item" onclick="window.location.href='/pages/tanggal_tua.html'" style="cursor: pointer;">
+                <div class="category-icon"><img src="/assets/img/menu/Tanggal Tua.png" alt="Tanggal Tua"></div>
                 <span>Tanggal Tua</span>
             </div>
             <div class="category-item">
-                <div class="category-icon"><img src="assets/img/menu/Komunitas.png" alt="Komunitas"></div>
-                <span>Komunitas</span>
+                <div class="category-icon" onclick="window.location.href='/pages/submit-tempat.html' "><img src="/assets/img/menu/Komunitas.png" alt="Komunitas"></div>
+                <span>Usulkan Tempat </span>
+            </div>
+            <div class="category-item" onclick="window.location.href='/pages/terserah.html'" style="cursor: pointer;">
+                <div class="category-icon"><img src="/assets/img/menu/Random Picker.png" alt="Random Picker"></div>
+                <span>Terserah</span>
             </div>
             <div class="category-item">
-                <div class="category-icon"><img src="assets/img/menu/Random Picker.png" alt="Random Picker"></div>
-                <span>Random Picker</span>
-            </div>
-            <div class="category-item">
-                <div class="category-icon"><img src="assets/img/menu/Split Bill.png" alt="Split Bill"></div>
+                <div class="category-icon"><img src="/assets/img/menu/Split Bill.png" alt="Split Bill"></div>
                 <span>Split Bill</span>
             </div>
         </div>
@@ -68,7 +69,7 @@
         <div class="restaurant-grid">
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Haji Salim.png" alt="Haji Salim">
+                <img src="/assets/img/Restoran Favorit/Haji Salim.png" alt="Haji Salim">
                 <div class="card-info">
                     <h3>Haji Salim Kebon Sirih 1959, Kebon Sirih Barat</h3>
                     <p>Makanan Berat, Nasi, Goreng</p>
@@ -77,7 +78,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Mie Gojo.png" alt="Mie Gojo">
+                <img src="/assets/img/Restoran Favorit/Mie Gojo.png" alt="Mie Gojo">
                 <div class="card-info">
                     <h3>Mie Gojo Kambing Kebon Sirih, Kebon Sirih Barat</h3>
                     <p>Makanan Berat, Nasi, Goreng</p>
@@ -86,7 +87,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Bakmi Ayam.png" alt="Bakmi Ayam Kecap">
+                <img src="/assets/img/Restoran Favorit/Bakmi Ayam.png" alt="Bakmi Ayam Kecap">
                 <div class="card-info">
                     <h3>Bakmi Ayam Kecap Pak Samsudin, Cikarang Selatan</h3>
                     <p>Makanan Berat, Bakmi Ayam</p>
@@ -95,7 +96,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Mie Aceh.png" alt="Mie Aceh Nandin">
+                <img src="/assets/img/Restoran Favorit/Mie Aceh.png" alt="Mie Aceh Nandin">
                 <div class="card-info">
                     <h3>Mie Aceh Nandin Selamet, Seitabudi Jakarta</h3>
                     <p>Makanan Berat, Mie, Ayam, Kikil</p>
@@ -104,7 +105,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Mi Ayam Pangsit.png" alt="Mie Ayam Pangsit">
+                <img src="/assets/img/Restoran Favorit/Mi Ayam Pangsit.png" alt="Mie Ayam Pangsit">
                 <div class="card-info">
                     <h3>Mie Ayam Pangait Serang 1969, Serang Barat</h3>
                     <p>Makanan Berat, Mie Ayam</p>
@@ -113,7 +114,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Sate Padang.png" alt="Sate Padang SM">
+                <img src="/assets/img/Restoran Favorit/Sate Padang.png" alt="Sate Padang SM">
                 <div class="card-info">
                     <h3>Sate Padang SM Kuliner Menteng, Sidoarjo</h3>
                     <p>Makanan Cepat Saji, Sate, Ayam, Sapi</p>
@@ -122,7 +123,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Nasi Goreng Gila.png" alt="Nasi Goreng Gila 82">
+                <img src="/assets/img/Restoran Favorit/Nasi Goreng Gila.png" alt="Nasi Goreng Gila 82">
                 <div class="card-info">
                     <h3>Nasi Goreng Gila 82 Menteng, Menteng</h3>
                     <p>Makanan Berat, Nasi, Goreng</p>
@@ -131,7 +132,7 @@
             </div>
 
             <div class="restaurant-card">
-                <img src="assets/img/Restoran Favorit/Ayam Bakar.png" alt="Ayam Bakar Selera Nusantara">
+                <img src="/assets/img/Restoran Favorit/Ayam Bakar.png" alt="Ayam Bakar Selera Nusantara">
                 <div class="card-info">
                     <h3>Ayam Bakar dan Ikan Bakar Selera Nusantara, Jakarta</h3>
                     <p>Makanan Berat, Nasi, Goreng</p>
@@ -147,6 +148,6 @@
 
     <div id="footer-container"></div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

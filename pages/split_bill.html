@@ -13,30 +13,48 @@
         <div id="navbar-container"></div>
     </section>
     
-    <section class="hero">
-        <div class="hero-header">
-            <h1>Bikin Baru</h1>
-            <p>Atur Jumlah yang Kamu Inginkan</p>
-        </div>
-
-        <div class="hero-body">
-            <div class="uang-container">
-                <div class="jumlah-uang">
-                    <input placeholder="Rp"">
-                    <i class="fas fa-pen"></i>
+    <main>
+        <!-- Form -->
+        <section class="form-section">
+ 
+            <div class="form-card">
+                <h2 class="form-title">Bikin Baru</h2>
+                <p class="form-sub">Atur Jumlah yang Kamu Inginkan</p>
+ 
+                <!-- Input -->
+                <div class="input-nominal">
+                    <span class="currency-label">Rp</span>
+                    <input type="number" id="nominal-input" placeholder="0" min="0">
+                    <i class="fas fa-pencil"></i>
+                    </button>
                 </div>
-
-                <div class="anggota-container">
-                    <div class="anggota-nama">
-                        <p>Nama Split Bill</p>
-                        <h2>Bikin Baru</h2>
-                        <hr>
+ 
+               <div class="jumlah-anggota-wrap">
+                    <label>Jumlah Anggota</label>
+                    <div class="counter-box">
+                        <div class="counter-info">
+                            <div class="counter-icon">👥</div>
+                            <div class="counter-text">
+                                <span id="counter-label">Tambah anggota</span>
+                                <span id="counter-sublabel">Ketuk + untuk menambah</span>
+                            </div>
+                        </div>
+                        <div class="counter-controls">
+                            <button class="btn-counter" id="btn-kurang" disabled>−</button>
+                            <span class="counter-num" id="counter-num">0</span>
+                            <button class="btn-counter" id="btn-tambah">+</button>
+                        </div>
                     </div>
                 </div>
+ 
+                <div class="spacer"></div>
+ 
+                <!-- Tombol Bersihkan -->
+                <button class="btn-bersihkan" id="btn-bersihkan">Bersihkan</button>
             </div>
-        </div>
-
-    </section>
+ 
+        </section> 
+    </main>
 
     <section class="footer">
         <div id="footer-container"></div>

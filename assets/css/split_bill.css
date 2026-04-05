@@ -91,86 +91,249 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    background-color: #FCEDD7;
-    margin: 20px;
-    border-radius: 40px;
-    padding: 100px 20px 180px 20px;
+.card-section {
+    padding: 16px;
+}
+ 
+.form-card {
+    background: var(--cream-light);
+    border-radius: 20px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 500px;
+    margin: 10px;
+    background: #FCEDD7;;
+}
+ 
+.form-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+ 
+.form-sub {
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-top: -14px;
+}
+ 
+/* Input Nominal */
+.input-nominal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    background: #FDF4E7;
+}
+ 
+.currency-label {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+ 
+.input-nominal input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    color: var(--text-dark);
     text-align: center;
-    color: white;
-    position: relative;
+}
+ 
+.input-nominal input::placeholder {
+    color: #ccc;
+}
+ 
+/* Sembunyikan arrow number input */
+.input-nominal input::-webkit-outer-spin-button,
+.input-nominal input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+ 
+.btn-edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-gray);
+    font-size: 15px;
+    padding: 4px;
+}
+ 
+/* Jumlah Anggota Counter */
+.jumlah-anggota-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.hero-icon {
-    background: white;
-    width: 80px;
-    height: 80px;
+.jumlah-anggota-wrap label {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: #FDF4E7;
+}
+
+.counter-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter-icon {
+    width: 36px;
+    height: 36px;
+    background: #E8D5B0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 30px auto;
-    color: #e5212e;
-    font-size: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.hero-header {
-    color: #333;
-}
-
-.hero h1 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-/* Hero Body */
-.hero-body h1 {
-    font-size: 20px;
-    color: #333;
-}
-
-.hero-body i {
-    color: #333;
-}
-
-.hero p {
     font-size: 18px;
-    opacity: 0.9;
-    line-height: 1.6;
 }
 
-.jumlah-uang {
+.counter-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.counter-text span {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 400;
+    display: block;
+}
+
+.counter-controls {
     display: flex;
     align-items: center;
-    gap: 100px;
-    padding: 0 16px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    background-color: #FDF4E7;
-    height: 42px;
-    border: 1px solid rgba(0,0,0,0.06);
+    gap: 16px;
 }
 
-.jumlah-uang i {
-    font-size: 14px;
-}
-
-.jumlah-uang input {
+.btn-counter {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid var(--orange);
     background: transparent;
-    border: transparent;
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: all 0.15s;
 }
 
-
-
-.anggota-container p {
-    color: #333;
+.btn-counter:hover {
+    background: var(--orange);
+    color: var(--white);
 }
 
-.anggota-container h2 {
-    color: #333;
+.btn-counter:disabled {
+    border-color: var(--border);
+    color: var(--border);
+    cursor: not-allowed;
 }
+
+.btn-counter:disabled:hover {
+    background: transparent;
+    color: var(--border);
+}
+
+.counter-num {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-dark);
+    min-width: 28px;
+    text-align: center;
+}
+
+/* Hasil Split */
+.hasil-split {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid var(--border);
+}
+
+.hasil-split h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.hasil-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0e8d8;
+}
+ 
+.hasil-item:last-child { border-bottom: none; }
+ 
+.hasil-nama {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+ 
+ .hasil-bayar {
+    font-size: 13px;
+    font-weight: 700;
+}
+ 
+/* Spacer */
+.spacer {
+    flex: 1;
+}
+ 
+/* Tombol Bersihkan */
+.btn-bersihkan {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    color: #FFFFFF;
+    background: #B3700B;
+}
+
+.btn-bersihkan:hover {
+    background: #8a6008;
+}
+ 
+.btn-bersihkan:active {
+    transform: scale(0.98);
+}
+ 
 
 
 @media (max-width: 992px) {

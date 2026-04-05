@@ -99,7 +99,6 @@ body {
 
 .category-icon-wrap img{
     width: 80%;
-    /*height: 100%;*/
     object-fit: contain;
 }
 

@@ -20,11 +20,8 @@ fetch('pages/navbar.html')
     });
   });
 
-
-
-
 // Footer
-fetch('../pages/footer.html')
+fetch('pages/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer-container').innerHTML = data;

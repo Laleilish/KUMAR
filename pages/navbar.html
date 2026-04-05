@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NavBar</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/navbar-style.css">
-    
+    <link rel="stylesheet" href="/assets/css/navbar-style.css">
+    <base href="/">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-left">
             <button class="hamburger">☰</button>
-            <div class="icon-nav"> <img src="../assets/img/icon-kumar.png" alt="KUMAR"></div>
-            <div class="logo">KU<span>MAR</span></div>
+
+            <div class="icon-nav" onclick="window.location.href='/index.html'"> <img src="/assets/img/icon-kumar.png" alt="KUMAR"></div>
+            <div class="logo" onclick="window.location.href='/index.html'">KU<span>MAR</span></div>
 
             <ul class="nav-links">
                 <div class="nav-links-header">
-                    <div class="nav-links-logo">
-                        <div class="icon-nav"><img src="../assets/img/icon-kumar.png" alt="KUMAR"></div>
+                    <div class="nav-links-logo" >
+                        <div class="icon-nav"><img src="/assets/img/icon-kumar.png" alt="KUMAR"></div>
                         <div class="logo">KU<span>MAR</span></div>
                     </div>
+
                     <button class="close-btn">✕</button>
                 </div>
-                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="/index.html">Beranda</a></li>
                 <li><a href="#">Hidden Gem</a></li>
-                <li><a href="#">Tanggal Tua</a></li>
+                <li><a href="/pages/tanggal_tua.html">Tanggal Tua</a></li>
                 
                 <div class="nav-right-mobile">
-                    <li><a href="#" class="login">Masuk</a></li>
+                    <li><a href="/pages/login.html" class="login">Masuk</a></li>
                     <li>
                         <div class="lang-switch">
                             <span class="active">ID</span>
@@ -42,7 +44,7 @@
         </div>
 
         <div class="nav-right">
-            <button class="btn-login">Masuk</button>
+            <button class="btn-login" onclick="window.location.href='/pages/login.html'">Masuk</button>
 
             <div class="lang-switch">
                 <span class="active">ID</span>
@@ -53,6 +55,6 @@
         </div>
 
     </nav>
-    <script src="../assets/js/navbar-script.js"></script>    
+    <script src="/assets/js/navbar-script.js"></script>    
 </body>
 </html>

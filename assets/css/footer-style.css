@@ -16,6 +16,7 @@ body{
     padding: 16px;
     width: 100%;
     height: auto;
+    border-radius: 25px 25px 0 0;
 }
 
 .footer-inner{

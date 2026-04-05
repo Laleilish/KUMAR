@@ -120,44 +120,8 @@ body {
 
 .hero-images {
     display: none;
-    /*flex: 1;
-    justify-content: flex-end;
-    align-items: center;*/
 }
 
-/*.food-img {
-    position: absolute;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.food-1 {
-    width: 40%;
-    aspect-ratio: 1;
-    top: -16%;
-    left: -10%;
-}
-
-.food-2 {
-    width: 50%;
-    aspect-ratio: 1;
-    bottom: 16%;
-    right: -24%;
-}
-.food-3 {
-    width: 50%;
-    aspect-ratio: 1;
-    bottom: -10%;
-    right: 60%;
-}
-.food-4 {
-    display: none;
-}
-.food-5 {
-    display: none;
-}*/
-
-/* Categories */
 .categories {
     padding: 36px 20px;
     text-align: center;

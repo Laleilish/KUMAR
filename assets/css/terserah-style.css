@@ -54,6 +54,12 @@ body {
     gap: 16px;
 }
 
+.category-desk{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .category-card {
     background: #ffffff;
     border-radius: 16px;
@@ -139,6 +145,13 @@ body {
     
     .category-list {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
+
+    .category-desk{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
 }

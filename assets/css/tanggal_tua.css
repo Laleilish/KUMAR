@@ -2,92 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
     background-color: #FDF4E7;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background: #FEF6EC;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.logo span {
-    color: #e5212e;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 600;
-}
-
-.nav-links a.active {
-    color: black;
-    border-bottom: 2px solid #e5212e;
-    padding-bottom: 5px;
-}
-
-.badge {
-    background: #e5212e;
-    color: white;
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 10px;
-}
-
-.nav-right {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-search{
-    color: #00880d;
-    background-color: #f0fdf4;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    
-}
-
-.btn-login {
-    background: #f0fdf4;
-    color: #00880d;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 /* Search Bar */
@@ -103,7 +22,7 @@ body {
     width: 100%;
     border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    background-color: var(--cream-light);
+    background-color: #FCEDD7;
     height: 42px;
     border: 1px solid rgba(0,0,0,0.06);
 }
@@ -135,12 +54,27 @@ body {
 }
 
 .hero-banner {
-    background-color: #EF950F;
+    /* background-color: #EF950F;
     margin: 10px 0px 0px 0px;
     border-radius: 40px;
     padding: 15px 10px 50px;
+
     text-align: center;
     position: relative;
+    min-height: 200px; */
+
+    background-color: #EF950F;
+    margin: 10px 0;
+    border-radius: 40px;
+    padding: 20px;
+
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-person {
@@ -259,13 +193,13 @@ body {
 .category-item span {
     font-size: 12px;
     font-weight: 600;
-    color: var(--text-gray);
+    color: #afafae;
     transition: color 0.2s;
 }
  
 .category-item.active span {
-    color: var(--text-dark);
-    border-bottom: 2.5px solid var(--orange);
+    color: #040818;
+    border-bottom: 2.5px solid #EF950F;
     padding-bottom: 2px;
 }
 
@@ -327,8 +261,8 @@ body {
     position: absolute;
     top: 8px;
     left: 8px;
-    background: var(--orange);
-    color: var(--white);
+    background: #EF950F;
+    color: #fff;
     font-size: 9px;
     font-weight: 700;
     padding: 3px 8px;
@@ -382,17 +316,17 @@ body {
     align-items: center;
     gap: 4px;
     font-size: 11px;
-    color: var(--text-gray);
+    color: #afafae;
 }
  
 .card-distance .fa-map-marker-alt {
-    color: var(--orange);
+    color: #EF950F;
 }
  
 .card-price {
     font-size: 13px;
     font-weight: 800;
-    color: var(--text-dark);
+    color: #040818;
 }
  
 /* ===== RESPONSIVE ===== */
@@ -403,19 +337,18 @@ body {
     
     /* Search */
     .location {
-    padding: 20px;
+        padding: 20px;
     }
 
     .search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 16px;
-    width: 100%;
-    border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    background-color: var(--cream-light);
-    height: 55px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 16px;
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        height: 55px;
     }   
 
     /* hero */
@@ -424,6 +357,9 @@ body {
     }
 
     .hero-banner {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         background-color: #EF950F;
         margin: 10px 0px 0px 0px;
         border-radius: 40px;
@@ -441,32 +377,32 @@ body {
     }
 
     .hero-judul h1 {
-        font-size: 48px;
+        font-size: 28px;
         text-align: center;
     }
 
     .hero-banner h2 {
-        font-size: 48px;
+        font-size: 28px;
         margin-bottom: 15px;
         text-align: right;
         color: #020618;
     }
 
     .hero-banner h3 {
-        font-size: 128px;
+        font-size: 49px;
         margin-bottom: px;
         text-align: right;
         color: #020618;
     }
     
     .hero p {
-        font-size: 30px;
+        font-size: 20px;
         text-align: right;
         color: white;   
     }
 
     .hero-info h2{
-        font-size: 48px;
+        font-size: 28px;
         margin: 20px;
     }
 
@@ -518,9 +454,5 @@ body {
         height: 100px;
         
     }
-
-}
-
-@media (min-width: 1064px){
 
 }
